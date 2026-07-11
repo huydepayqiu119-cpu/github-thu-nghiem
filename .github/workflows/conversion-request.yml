@@ -211,7 +211,7 @@ jobs:
     needs: [get-pack-info, validate-pack]
     permissions:
       contents: read
-    timeout-minutes: 120
+    timeout-minutes: 300
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -276,7 +276,7 @@ jobs:
     needs: [get-pack-info, validate-pack]
     permissions:
       contents: read
-    timeout-minutes: 120
+    timeout-minutes: 300
     outputs:
       run_id: ${{ steps.get-pack-info.outputs.pack_url }}
     steps:
