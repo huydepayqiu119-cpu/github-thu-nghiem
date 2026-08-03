@@ -312,7 +312,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install -y moreutils zip unzip imagemagick
-          yarn global add spritesheet-js
+          yarn global add spritesheet-js@0.6.5
           pip install Pillow requests jproperties pyyaml
       - name: Download validated pack
         uses: actions/download-artifact@v4
